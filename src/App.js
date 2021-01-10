@@ -26,22 +26,22 @@ function App() {
   // let page = 0;
 
   useEffect(() => {
-    fetch("http://my-json-server.typicode.com/rivitest001/task04/posts")
+    fetch("https://my-json-server.typicode.com/rivitest001/task04/posts")
       .then((response) => response.json())
       .then((act) => {
         setActivities((a) => [...a, ...act]);
       });
-    fetch("http://my-json-server.typicode.com/rivitest001/task03/posts")
+    fetch("https://my-json-server.typicode.com/rivitest001/task03/posts")
       .then((response) => response.json())
       .then((act) => {
         setActivities((a) => [...a, ...act]);
       });
-    fetch("http://my-json-server.typicode.com/rivitest001/task02/posts")
+    fetch("https://my-json-server.typicode.com/rivitest001/task02/posts")
       .then((response) => response.json())
       .then((act) => {
         setActivities((a) => [...a, ...act]);
       });
-    fetch("http://my-json-server.typicode.com/rivitest001/task01/posts")
+    fetch("https://my-json-server.typicode.com/rivitest001/task01/posts")
       .then((response) => response.json())
       .then((act) => {
         setActivities((a) => [...a, ...act]);

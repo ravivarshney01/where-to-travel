@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { Paper } from "@material-ui/core";
 import useSuggestions from "../hooks/useSuggestions";
 import "./tag.css";
+import { Close as CloseIcon } from "@material-ui/icons";
 
 const TagsInput = (props) => {
   const [tags, setTags] = useState([]);
@@ -51,14 +52,10 @@ const TagsInput = (props) => {
               key={index}
             >
               <span className="tag-title">{tag}</span>
-
-              <i
-                className="material-icons"
+              <CloseIcon
                 onClick={() => removeTags(index)}
                 style={{ cursor: "pointer" }}
-              >
-                close
-              </i>
+              />
             </Paper>
           ))}
         </ul>
